@@ -1262,20 +1262,21 @@
       }
     }
   </style>
-  <link href="/assets/critical.min.css?v=95653272376041968451700475548" rel="stylesheet" type="text/css" media="all" />
-  <link href="/assets/bootstrap-grid.css?v=19294384981350530621680231724" rel="stylesheet" type="text/css"
+  <link href="./assets/critical.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="./assets/bootstrap-grid.css" rel="stylesheet" type="text/css"
     media="all" />
-  <link href="/assets/utilities.min.css?v=31362260734221742721700712398" rel="stylesheet" type="text/css" media="all" />
-  <link href="/assets/reset.min.css?v=121495095219257824661700712397" rel="stylesheet" type="text/css" media="all" />
-  <link href="/assets/vendor.min.css?v=168556534831793898061700713125" rel="stylesheet" type="text/css" media="all" />
-  <link href="/assets/base.min.css?v=13166817711904811781700795266" rel="stylesheet" type="text/css" media="all" />
-  <script src="/assets/constants.js?v=165488195745554878101691992496" defer="defer"></script>
-  <script src="/assets/pubsub.js?v=2921868252632587581691992497" defer="defer"></script>
+  <link href="./assets/utilities.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="./assets/reset.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="./assets/vendor.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="./assets/base.min.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="./assets/constants.js" defer="defer"></script>
+  <script src="./assets/pubsub.js" defer="defer"></script>
 
   <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
   <script>(function () { if ("sendBeacon" in navigator && "performance" in window) { var session_token = document.cookie.match(/_shopify_s=([^;]*)/); function handle_abandonment_event(e) { var entries = performance.getEntries().filter(function (entry) { return /monorail-edge.shopifysvc.com/.test(entry.name); }); if (!window.abandonment_tracked && entries.length === 0) { window.abandonment_tracked = true; var currentMs = Date.now(); var navigation_start = performance.timing.navigationStart; var payload = { shop_id: 73587261737, url: window.location.href, navigation_start, duration: currentMs - navigation_start, session_token: session_token && session_token.length === 2 ? session_token[1] : "", page_type: "index" }; window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({ schema_id: "online_store_buyer_site_abandonment/1.1", payload: payload, metadata: { event_created_at_ms: currentMs, event_sent_at_ms: currentMs } })); } } window.addEventListener('pagehide', handle_abandonment_event); } }());</script>
   <script
-    id="web-pixels-manager-setup">(function e(e, n, a, t, o, r, i) { var s = null !== e, l = ("function" == typeof BigInt && BigInt.toString().indexOf("[native code]") ? "modern" : "legacy").substring(0, 1), c = t.substring(0, 1); if (s) { window.Shopify = window.Shopify || {}; var d = window.Shopify; d.analytics = d.analytics || {}; var u = d.analytics; u.replayQueue = [], u.publish = function (e, n, a) { u.replayQueue.push([e, n, a]) }; try { self.performance.mark("wpm:start") } catch (e) { } } var p, f, y, h, v, m, w, g, b, _ = [a, "/wpm", "/", c, r, l, ".js"].join(""); f = (p = { src: _, async: !0, onload: function () { if (e) { var a = window.webPixelsManager.init(e); null == n || n(a); var t = window.Shopify.analytics; t.replayQueue.forEach((function (e) { var n = e[0], t = e[1], o = e[2]; a.publishCustomEvent(n, t, o) })), t.replayQueue = [], t.publish = a.publishCustomEvent, t.visitor = a.visitor } }, onerror: function () { var n = (null == e ? void 0 : e.storefrontBaseUrl) ? e.storefrontBaseUrl.replace(/\/$/, "") : self.location.origin, a = "".concat(n, "/.well-known/shopify/monorail/unstable/produce_batch"), t = JSON.stringify({ metadata: { event_sent_at_ms: (new Date).getTime() }, events: [{ schema_id: "web_pixels_manager_load/2.0", payload: { version: o || "latest", page_url: self.location.href, status: "failed", error_msg: "".concat(_, " has failed to load") }, metadata: { event_created_at_ms: (new Date).getTime() } }] }); try { if (self.navigator.sendBeacon.bind(self.navigator)(a, t)) return !0 } catch (e) { } var r = new XMLHttpRequest; try { return r.open("POST", a, !0), r.setRequestHeader("Content-Type", "text/plain"), r.send(t), !0 } catch (e) { console && console.warn && console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.") } return !1 } }).src, y = p.async, h = void 0 === y || y, v = p.onload, m = p.onerror, w = document.createElement("script"), g = document.head, b = document.body, w.async = h, w.src = f, v && w.addEventListener("load", v), m && w.addEventListener("error", m), g ? g.appendChild(w) : b ? b.appendChild(w) : console.error("Did not find a head or body element to append the script") })({ shopId: 73587261737, storefrontBaseUrl: "https://umino-demo.myshopify.com", cdnBaseUrl: "https://umino-demo.myshopify.com/cdn", surface: "storefront-renderer", enabledBetaFlags: ["web_pixels_async_pixel_refactor", "web_pixels_visitor_api", "web_pixels_manager_performance_improvement"], webPixelsConfigList: [{ "id": "shopify-app-pixel", "configuration": "{}", "eventPayloadVersion": "v1", "runtimeContext": "STRICT", "scriptVersion": "0570", "apiClientId": "shopify-pixel", "type": "APP" }, { "id": "shopify-custom-pixel", "eventPayloadVersion": "v1", "runtimeContext": "LAX", "scriptVersion": "0570", "apiClientId": "shopify-pixel", "type": "CUSTOM" }], initData: { "cart": null, "checkout": null, "customer": null, "productVariants": [] }, }, function pageEvents(webPixelsManagerAPI) { webPixelsManagerAPI.publish("page_viewed"); }, "https://umino-demo.myshopify.com/cdn", "browser", "0.0.405", "c91df7a1wcceb8315p470a5623m7dd87582", ["web_pixels_async_pixel_refactor", "web_pixels_visitor_api", "web_pixels_manager_performance_improvement"]);</script>
+    id="web-pixels-manager-setup">(function e(e, n, a, t, o, r, i) { var s = null !== e, l = ("function" == typeof BigInt && BigInt.toString().indexOf("[native code]") ? "modern" : "legacy").substring(0, 1), c = t.substring(0, 1); if (s) { window.Shopify = window.Shopify || {}; var d = window.Shopify; d.analytics = d.analytics || {}; var u = d.analytics; u.replayQueue = [], u.publish = function (e, n, a) { u.replayQueue.push([e, n, a]) }; try { self.performance.mark("wpm:start") } catch (e) { } } var p, f, y, h, v, m, w, g, b, _ = [a, "/wpm", "/", c, r, l, ".js"].join(""); f = (p = { src: _, async: !0, onload: function () { if (e) { var a = window.webPixelsManager.init(e); null == n || n(a); var t = window.Shopify.analytics; t.replayQueue.forEach((function (e) { var n = e[0], t = e[1], o = e[2]; a.publishCustomEvent(n, t, o) })), t.replayQueue = [], t.publish = a.publishCustomEvent, t.visitor = a.visitor } }, onerror: function () { var n = (null == e ? void 0 : e.storefrontBaseUrl) ? e.storefrontBaseUrl.replace(/\/$/, "") : self.location.origin, a = "".concat(n, "/.well-known/shopify/monorail/unstable/produce_batch"), t = JSON.stringify({ metadata: { event_sent_at_ms: (new Date).getTime() }, events: [{ schema_id: "web_pixels_manager_load/2.0", payload: { version: o || "latest", page_url: self.location.href, status: "failed", error_msg: "".concat(_, " has failed to load") }, metadata: { event_created_at_ms: (new Date).getTime() } }] }); try { if (self.navigator.sendBeacon.bind(self.navigator)(a, t)) return !0 } catch (e) { } var r = new XMLHttpRequest; try { return r.open("POST", a, !0), r.setRequestHeader("Content-Type", "text/plain"), r.send(t), !0 } catch (e) { console && console.warn && console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.") } return !1 } }).src, y = p.async, h = void 0 === y || y, v = p.onload, m = p.onerror, w = document.createElement("script"), g = document.head, b = document.body, w.async = h, w.src = f, v && w.addEventListener("load", v), m && w.addEventListener("error", m), g ? g.appendChild(w) : b ? b.appendChild(w) : console.error("Did not find a head or body element to append the script") })({ shopId: 73587261737, storefrontBaseUrl: "https://umino-demo.myshopify.com", cdnBaseUrl: "https://umino-demo.myshopify.com/cdn", surface: "storefront-renderer", enabledBetaFlags: ["web_pixels_async_pixel_refactor", "web_pixels_visitor_api", "web_pixels_manager_performance_improvement"], webPixelsConfigList: [{ "id": "shopify-app-pixel", "configuration": "{}", "eventPayloadVersion": "v1", "runtimeContext": "STRICT", "scriptVersion": "0570", "apiClientId": "shopify-pixel", "type": "APP" }, { "id": "shopify-custom-pixel", "eventPayloadVersion": "v1", "runtimeContext": "LAX", "scriptVersion": "0570", "apiClientId": "shopify-pixel", "type": "CUSTOM" }], initData: { "cart": null, "checkout": null, "customer": null, "productVariants": [] }, }, function pageEvents(webPixelsManagerAPI) { webPixelsManagerAPI.publish("page_viewed"); }, "https://umino-demo.myshopify.com/cdn", "browser", "0.0.405", "c91df7a1wcceb8315p470a5623m7dd87582", ["web_pixels_async_pixel_refactor", "web_pixels_visitor_api", "web_pixels_manager_performance_improvement"]);
+    </script>
   <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
     window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
     window.ShopifyAnalytics.meta.currency = 'USD';
@@ -1641,7 +1642,7 @@
 
 
     </div>
-    <link href="/assets/popup.css?v=70777777641367844991700727958" rel="stylesheet" type="text/css" media="all" />
+    <link href="./assets/popup.css" rel="stylesheet" type="text/css" media="all" />
     <header id="page-header" class="page-header h- " data-sticky="true" data-sticky-mobile="true">
       <div class="header-container h_layout1">
         <div id="shopify-section-top-bar" class="shopify-section">
@@ -1943,7 +1944,7 @@
                             </div>
                             <div class="container-fluid">
                               <div class="row">
-                                <link href="/assets/collections-item.css?v=118833334258623663631700712396"
+                                <link href="./assets/collections-item.css"
                                   rel="stylesheet" type="text/css" media="all" />
 
                                 <div id="41733e63-fc80-4970-a674-d202ddbc4765" class="col-sm-2-5"
@@ -2184,18 +2185,8 @@
                               <i class="icon-x close-menu pointer"></i>
                             </div>
                             <div class="row">
-                              <link href="/assets/collections-item.css?v=118833334258623663631700712396"
+                              <link href="./assets/collections-item.css"
                                 rel="stylesheet" type="text/css" media="all" />
-
-
-
-
-
-
-
-
-
-
                               <div id="ffec3a6d-dc40-4cb3-8117-a17be820fde9" class="bls-menu-item type_link col-sm-3">
                                 <div class="subchildmenu-title relative pointer" data-menu-level2><a
                                     class="fw-500 mb-10 d-block toggle-submenu-mb capitalize not-links" role="link">
@@ -2358,20 +2349,8 @@
                             </div>
                             <div class="container-fluid">
                               <div class="row">
-                                <link href="/assets/collections-item.css?v=118833334258623663631700712396"
+                                <link href="./assets/collections-item.css"
                                   rel="stylesheet" type="text/css" media="all" />
-
-
-
-
-
-
-
-
-
-
-
-
                                 <div id="20ad44f0-ea33-4491-8fd2-8c87af447bf2" class="bls-menu-item type_link col-sm-2">
                                   <div class="subchildmenu-title relative pointer" data-menu-level2><a
                                       class="fw-500 mb-10 d-block toggle-submenu-mb capitalize not-links" role="link">
@@ -3366,7 +3345,7 @@
                                 <div id="search-results">
                                   <div class="bls__grid bls__product-style-3">
                                     <div id="search-results-list" class="search-results-list list list-view-items">
-                                      <link href="/assets/scrolling-text.css?v=121221332715765499651700290388"
+                                      <link href="./assets/scrolling-text.css"
                                         rel="stylesheet" type="text/css" media="all" />
                                       <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                                         data-product-handle="square-textured-striped-t-shirt">
@@ -3521,7 +3500,7 @@
       [{ "id":44789971484969,"option":"Green","qty":100,"available":true,"mamagement":"shopify"},{ "id":44789971517737,"option":"Purple","qty":1000,"available":true,"mamagement":"shopify"}]
     </script>
                                       </div>
-                                      <link href="/assets/scrolling-text.css?v=121221332715765499651700290388"
+                                      <link href="./assets/scrolling-text.css"
                                         rel="stylesheet" type="text/css" media="all" />
                                       <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                                         data-product-handle="teddy-bear-coats">
@@ -3665,7 +3644,7 @@
       [{ "id":44703344066857,"option":"Black","qty":0,"available":false,"mamagement":"shopify"},{ "id":44703344099625,"option":"Black","qty":5,"available":true,"mamagement":"shopify"},{ "id":44703344132393,"option":"Purple","qty":3,"available":true,"mamagement":"shopify"},{ "id":44703344165161,"option":"Purple","qty":4,"available":true,"mamagement":"shopify"},{ "id":44703344197929,"option":"Brown","qty":5,"available":true,"mamagement":"shopify"},{ "id":44703344230697,"option":"Brown","qty":5,"available":true,"mamagement":"shopify"}]
     </script>
                                       </div>
-                                      <link href="/assets/scrolling-text.css?v=121221332715765499651700290388"
+                                      <link href="./assets/scrolling-text.css"
                                         rel="stylesheet" type="text/css" media="all" />
                                       <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                                         data-product-handle="oversized-quilted-coats">
@@ -3804,7 +3783,7 @@
       [{ "id":44703343870249,"option":"Brown","qty":50,"available":true,"mamagement":"shopify"},{ "id":44703343903017,"option":"White","qty":50,"available":true,"mamagement":"shopify"}]
     </script>
                                       </div>
-                                      <link href="/assets/scrolling-text.css?v=121221332715765499651700290388"
+                                      <link href="./assets/scrolling-text.css"
                                         rel="stylesheet" type="text/css" media="all" />
                                       <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                                         data-product-handle="checkered-crop-top">
@@ -3943,7 +3922,7 @@
       [{ "id":44703343051049,"option":"Green","qty":60,"available":true,"mamagement":"shopify"},{ "id":44703343083817,"option":"Green","qty":60,"available":true,"mamagement":"shopify"},{ "id":44703343116585,"option":"Green","qty":60,"available":true,"mamagement":"shopify"},{ "id":44703343149353,"option":"Blue","qty":0,"available":false,"mamagement":"shopify"},{ "id":44703343182121,"option":"Blue","qty":60,"available":true,"mamagement":"shopify"},{ "id":44703343214889,"option":"Blue","qty":60,"available":true,"mamagement":"shopify"}]
     </script>
                                       </div>
-                                      <link href="/assets/scrolling-text.css?v=121221332715765499651700290388"
+                                      <link href="./assets/scrolling-text.css"
                                         rel="stylesheet" type="text/css" media="all" />
                                       <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                                         data-product-handle="oversized-cotton-short">
@@ -4098,7 +4077,7 @@
       [{ "id":44703342985513,"option":"Blue","qty":200,"available":true,"mamagement":"shopify"},{ "id":44703343018281,"option":"Light Blue","qty":300,"available":true,"mamagement":"shopify"}]
     </script>
                                       </div>
-                                      <link href="/assets/scrolling-text.css?v=121221332715765499651700290388"
+                                      <link href="./assets/scrolling-text.css"
                                         rel="stylesheet" type="text/css" media="all" />
                                       <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                                         data-product-handle="satin-tunic-dress">
@@ -4287,7 +4266,7 @@
                     </a>
                   </div>
                 </div>
-                <link href="/assets/cart.css?v=91048921435168802311700795267" rel="stylesheet" type="text/css"
+                <link href="./assets/cart.css" rel="stylesheet" type="text/css"
                   media="all" />
                 <div class="bls__header_minicart">
                   <cart-notification>
@@ -4411,7 +4390,7 @@
 </script>
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       <div id="shopify-section-template--18418720014633__0c521c75-5d82-4dd6-aecc-f519d8907411" class="shopify-section">
-        <link href="/assets/slideshow.css?v=70111045469566933901700290390" rel="stylesheet" type="text/css"
+        <link href="./assets/slideshow.css" rel="stylesheet" type="text/css"
           media="all" />
 
         <section id="template--18418720014633__0c521c75-5d82-4dd6-aecc-f519d8907411"
@@ -4610,7 +4589,7 @@
 
       </div>
       <div id="shopify-section-template--18418720014633__d22b349b-1e5c-4e9d-86c3-1f962770d193" class="shopify-section">
-        <link href="/assets/collections-item.css?v=118833334258623663631700712396" rel="stylesheet" type="text/css"
+        <link href="./assets/collections-item.css" rel="stylesheet" type="text/css"
           media="all" />
         <section class="color-default-color-scheme gradient bls__section  bls__collection-packery   gap-mobile"
           style="--section-padding-top: 0px; --section-padding-bottom: 0px; --bls-gutter-x:  30px;">
@@ -4719,7 +4698,7 @@
 
       </div>
       <div id="shopify-section-template--18418720014633__c6efc7af-e102-44d6-b23f-b3df7fd84aa6" class="shopify-section">
-        <link href="/assets/product.css?v=170499147056201438391700795267" rel="stylesheet" type="text/css"
+        <link href="./assets/product.css" rel="stylesheet" type="text/css"
           media="all" />
         <section class="bls__section color-default-color-scheme gradient  bls__product "
           style="--section-padding-top: 0px; --section-padding-bottom: 0px; --bls_product-item-vertical-space: 0px;"
@@ -4747,7 +4726,7 @@
                     </div>
                     <div class="swiper-wrapper " style="--perload-gap: 30px">
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="square-textured-striped-t-shirt">
@@ -4897,7 +4876,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="checkered-crop-top">
@@ -5032,7 +5011,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="printed-long-sleeve-shirt">
@@ -5184,7 +5163,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="balloon-sleeved-shirt">
@@ -5333,7 +5312,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="colorful-long-sleeve-dress">
@@ -5639,7 +5618,7 @@
         </style>
       </div>
       <div id="shopify-section-template--18418720014633__bf8c8378-d980-4080-aaa3-02e0b1af6969" class="shopify-section">
-        <link href="/assets/product.css?v=170499147056201438391700795267" rel="stylesheet" type="text/css"
+        <link href="./assets/product.css" rel="stylesheet" type="text/css"
           media="all" />
         <section class="bls__section color-default-color-scheme gradient  bls__product "
           style="--section-padding-top: 0px; --section-padding-bottom: 0px; --bls_product-item-vertical-space: 0px;"
@@ -5667,7 +5646,7 @@
                     </div>
                     <div class="swiper-wrapper " style="--perload-gap: 30px">
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="square-textured-striped">
@@ -5820,7 +5799,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="colorful-wind-coats">
@@ -5969,7 +5948,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="short-sleeve-sweater">
@@ -6124,7 +6103,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="summer-oversized-shirt">
@@ -6273,7 +6252,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="colorful-long-sleeve-dress-1">
@@ -6402,7 +6381,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <link href="/assets/scrolling-text.css?v=121221332715765499651700290388" rel="stylesheet"
+                        <link href="./assets/scrolling-text.css" rel="stylesheet"
                           type="text/css" media="all" />
                         <div class="bls__product-item  label-depend-on-button rounded show__action-mobile"
                           data-product-handle="plaid-long-sleeve-shirt">
@@ -6861,7 +6840,7 @@
 
       </div>
       <div id="shopify-section-template--18418720014633__d39e76c8-b778-45ee-946b-ffe978f7ed46" class="shopify-section">
-        <link href="/assets/lookbook.css?v=164072181913993447971700290381" rel="stylesheet" type="text/css"
+        <link href="./assets/lookbook.css" rel="stylesheet" type="text/css"
           media="all" />
         <section class="bls__section color-default-color-scheme gradient  bls__lookbook-instagram "
           style="--section-padding-top: 0px; --section-padding-bottom: 0px; --bls-gutter-x:  5px;">
@@ -7706,7 +7685,7 @@
 
     </div>
   </div>
-  <link href="/assets/fake-order.css?v=12388099360336736161686371907" rel="stylesheet" type="text/css" media="all" />
+  <link href="./assets/fake-order.css" rel="stylesheet" type="text/css" media="all" />
   <div id="bls__fake-order" class="fake-order animated hidden-mobile" style="display: none;" data-time-delay="5000"
     data-time-display="6000">
     <a role="link" class="absolute fake-order-close icon-x" aria-label="close fake order"></a>
@@ -8056,19 +8035,19 @@
       </div>
     </div>
   </div>
-  <link href="/assets/product.css?v=170499147056201438391700795267" rel="stylesheet" type="text/css" media="all" />
-  <script src="/assets/swiper-bundle.min.js?v=18042377266600587561688725134" defer="defer"></script>
-  <script src="/assets/easydlg.min.js?v=133642802889929992201680231724" defer="defer"></script>
-  <script src="/assets/fslightbox.min.js?v=119580603246925025091700290380" defer="defer"></script>
+  <link href="./assets/product.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="./assets/swiper-bundle.min.js" defer="defer"></script>
+  <script src="./assets/easydlg.min.js" defer="defer"></script>
+  <script src="./assets/fslightbox.min.js" defer="defer"></script>
   <script defer="defer">
     var umino_app = {
       shop: 'umino-demo.myshopify.com',
       domain: 'umino-demo.myshopify.com', mode: 'front',
     };
   </script>
-  <script src="/assets/shopify.min.js?v=140781055736934018121700475551" defer="defer"></script>
-  <script src="/assets/theme.min.js?v=75252481103710447501700475220" defer="defer"></script>
-  <script src="/assets/product.min.js?v=93152883853004017591700475549" defer="defer"></script>
+  <script src="./assets/shopify.min.js" defer="defer"></script>
+  <script src="./assets/theme.min.js" defer="defer"></script>
+  <script src="./assets/product.min.js" defer="defer"></script>
 
   <feature-button class="d-none extent-button-right-bar"></feature-button>
 </body>
